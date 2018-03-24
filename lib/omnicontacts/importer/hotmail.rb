@@ -37,7 +37,7 @@ module OmniContacts
 
       def contacts_from_response response_as_json
         response = JSON.parse(response_as_json)
-        puts response
+        p response
         contacts = []
         response['data'].each do |entry|
           # creating nil fields to keep the fields consistent across other networks
