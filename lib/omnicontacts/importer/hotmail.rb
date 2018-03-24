@@ -10,6 +10,7 @@ module OmniContacts
       attr_reader :auth_host, :authorize_path, :auth_token_path, :scope
 
       def initialize app, client_id, client_secret, options ={}
+        puts "ITS INITIALIZED!"
         super app, client_id, client_secret, options
         @auth_host = "login.live.com"
         @authorize_path = "/oauth20_authorize.srf"
